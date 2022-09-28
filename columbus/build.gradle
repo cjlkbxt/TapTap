@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'com.google.protobuf'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        manifestPlaceholders
+        minSdk 24
+        targetSdk 31
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        manifestPlaceholders.columbus_permission = rootProject.columbusPermission
+        buildConfigField "String", "COLUMBUS_PERMISSION_NAME", "\"$rootProject.columbusPermission\""
+
+    }
+
+    buildTypes {
+        release {
+            //minify is enabled, but obfuscation is intentionally disabled in the rules
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.19.2"
+    }
+    plugins {
+        javalite {
+            artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.1'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {
+                    option 'lite'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+
+    //Tensorflow, used in non-CHRE usage
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.0'
+
+    //Protobuf
+    api "com.google.protobuf:protobuf-javalite:3.19.2"
+
+    compileOnly project(path: ':systemstubs')
+
+}

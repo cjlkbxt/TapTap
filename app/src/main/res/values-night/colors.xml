@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="reachability_background">@color/white</color>
+    <color name="search_box_background">#757575</color>
+    <color name="background_error">#993C30</color>
+    <color name="splash_background">@color/black</color>
+    <color name="licenses_background">@color/black</color>
+    <color name="licenses_toolbar">@color/black</color>
+    <color name="setup_gesture_lottie_background">@color/black</color>
+</resources>

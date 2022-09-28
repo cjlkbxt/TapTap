@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1472FF</color>
+    <color name="colorPrimaryDark">#801472FF</color>
+    <color name="colorAccent">#1472FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_error">#E29481</color>
+    <color name="reachability_background">@color/black</color>
+    <color name="search_box_background">#F5F5F5</color>
+    <color name="icon_foreground">@android:color/white</color>
+    <color name="icon_background">@color/black</color>
+    <color name="icon_primary">@color/white</color>
+    <color name="splash_background">@color/white</color>
+    <color name="licenses_background">@color/white</color>
+    <color name="licenses_toolbar">@color/white</color>
+    <color name="setup_gesture_lottie_background">@color/white</color>
+</resources>

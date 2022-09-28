@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TextAppearance.AppCompat.Large.TapTap" parent="TextAppearance.AppCompat.Large">
+        <item name="android:fontFamily">@font/google_sans_text_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.ExtraLarge.TapTap" parent="TextAppearance.AppCompat.Large">
+        <item name="android:fontFamily">@font/google_sans_text_medium</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Medium.TapTap" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/google_sans_text_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small.TapTap" parent="TextAppearance.AppCompat.Small">
+        <item name="android:fontFamily">@font/google_sans_text_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small.TapTap.Medium" parent="TextAppearance.AppCompat.Small">
+        <item name="android:fontFamily">@font/google_sans_text_medium</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.TapTap" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.Design.Hint.TapTap</item>
+        <item name="fontFamily">@font/google_sans_text</item>
+        <item name="android:fontFamily">@font/google_sans_text</item>
+    </style>
+
+    <style name="TextAppearance.Design.Hint.TapTap" parent="TextAppearance.Design.Hint">
+        <item name="fontFamily">@font/google_sans_text</item>
+        <item name="android:fontFamily">@font/google_sans_text</item>
+    </style>
+
+    <style name="Widget.Material3.CardView.Filled.TapTap" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.Material3.Chip.Icon.TapTap" parent="@style/Widget.Material3.Chip.Assist">
+        <item name="chipIconVisible">true</item>
+        <item name="chipStrokeColor">@android:color/transparent</item>
+    </style>
+    
+    <style name="Widget.Material3.Chip.Icon.TapTap.Round" parent="Widget.Material3.Chip.Icon.TapTap">
+        <item name="chipCornerRadius">16dp</item>
+    </style>
+
+    <style name="TextAppearance.Tabs" parent="TextAppearance.AppCompat.Small.TapTap">
+        <item name="android:textFontWeight" tools:ignore="NewApi">500</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Tooltip.TapTap" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.TapTap.Medium</item>
+    </style>
+
+</resources>
